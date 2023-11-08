@@ -1,0 +1,88 @@
+body {
+    background-color: #1c1c1c;
+}
+
+.sidenav {
+    min-height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20%;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .sidenav a {
+    padding: 25px 8px 25px 16px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #2cacac;
+  }
+
+  #about {
+      border-top: 0.5px solid rgb(112, 112, 112);
+  }
+
+#contact {
+    border-top: 1px solid rgb(112, 112, 112);
+    border-bottom: 1px solid rgb(112, 112, 112);
+}
+
+#typewrite {
+    margin-left: 15%;
+    margin-top: 10%;
+    color: #2cacac;
+    font-family: 'Outfit', sans-serif;    
+    font-size: 3.75rem;
+}
+
+#filler {
+    margin-left: 16%;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    margin-right: 40%;  
+}
+
+.button {
+    transition-duration: 0.4s;
+    background-color: #1c1c1c; color: #2cacac;
+    border: 2px solid #2cacac;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 15%;
+    margin-top: 30px;
+    width: 300px;
+    letter-spacing: 2px;
+    animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  .button:hover {
+    background-color: #2cacac; /* Green */
+    color: black;
+  }
+
+  canvas{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+  }
+
+  #django{
+    color:#2cacac;
+  }

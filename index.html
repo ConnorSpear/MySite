@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CS || Home</title>
+	<link href="main.css" rel="stylesheet"/>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<canvas>
+	</canvas>
+	<h1 id="typewrite"></h1>
+	<p id="footer"></p>
+	<div class="sidenav">
+		<a id="about" href="about.html">About</a>
+		<a id="about" href="#skills">Skills</a>
+		<a id="about" href="#experience">Experience</a>
+		<a id="contact" href="#contact">Contact</a>
+	</div>
+	<script src="canvas.js"></script>
+	<a href="contact.html"><button id="proceed" type="button" class="button">Contact me!</button></a>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		var i = 0;
+		var j = 0;
+		var txt = "Hi,\n I'm Connor, \n A Data and Tech Enthusiast!\n"; /* The text */
+		var welcome = "Here, you can learn a bit about what I do!"
+		var speed = 60; /* The speed/duration of the effect in milliseconds */
+
+		function typeWriter() {
+  			if (i < txt.length) {
+    			let text = txt.charAt(i);
+    			document.getElementById("typewrite").innerHTML += text=== "\n" ? "<br/>": text;
+    			i++;
+    			setTimeout(typeWriter, speed);
+  			}
+
+			if (i == txt.length) {
+				let text = welcome.charAt(j);
+				document.getElementById("footer").innerHTML += text=== "\n" ? "<br/>": text;
+				j++;
+				setTimeout(typeWriter, speed);
+			}
+			
+		}
+
+		window.onload = typeWriter
+		$('#proceed').delay(4000).show(0);
+		
+
+	</script>
+
+</body>
+</html>
