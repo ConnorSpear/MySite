@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CS || About</title>
+	<link href="about.css" rel="stylesheet"/>
+	<style type="text/css"></style>
+
+</head>
+<body>
+	<div class="sidenav">
+		<a id="about" href="index.html">Home</a>
+		<a id="about" href="skills.html">Projects</a>
+		<a id="about" href="experience.html">Experience</a>
+		<a id="contact" href="contact.html">Contact</a>
+	  </div>
+
+	  <h1 id="typewrite"></h1>
+	  <p id="filler">Hello and welcome to my site! As you can probably tell this is definitely WIP and forever evolving.
+		The purpose of this site is to showcase my skills and learn a new framework, while also showing you my accolades and achievements.
+		This site is created using the <a id="django" href="https://www.djangoproject.com/">django project</a> framework. Therefore,
+		I have developed this site using HTML, CSS and and some JavaScript to run the front end, and Python taking control of the backend.
+		For version control and deployment of any updates, I have used Git, you can check out this source code on Github
+	  </p>
+	  <p id="filler">
+		  As a quick work summary, I recently worked for Spark New Zealand, a leading telecommunications company in New Zealand, my role at Spark was an 'Analytics Specialist' with the 
+		  product data squad, my main technologies used were Snowflake SQL, PowerBI, Python's Pandas, Azure and some Azure Data Factory. Overtime, during this role I developed a knack
+		  for clean and recyclable code, whether that be advanced SQL queries, python scripts or PowerBI reports which allowed my colleagues to easily pick up and understand what work I had done.
+		  Read more about my work experiences <a id="django" href="experience.html">here!</a>
+	  </p>
+	  <p id="filler">
+		  On a personal note, I am an avid footballer, playing since 'the midgets' (5th grade), this has taught me about working as a team and contributing where and how
+		  my team needs it. I am a keen programmer and problem solver, since university I have had many personal projects including, this website, creating a sudoku solver 
+		  using Java and creating the game snake using JavaScript!
+	  </p>
+	  <a href="contact.html"><button id="proceed" type="button" class="button">Ask me anything!</button></a>
+	  <script type="text/javascript" src="stars.js"></script>
+	  <script>
+		var i = 0;
+		var txt = "Me, Myself & I"; /* The text */
+		var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+		function typeWriter() {
+  			if (i < txt.length) {
+    			document.getElementById("typewrite").innerHTML += txt.charAt(i);
+    			i++;
+    			setTimeout(typeWriter, speed);
+  			}
+		}
+
+		window.onload = typeWriter
+		$('#proceed').delay(6000).show(0);
+
+	  </script>
+
+</body>
+</html>
